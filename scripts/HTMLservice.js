@@ -50,7 +50,7 @@ class htmlService {
 
 
         QUESTION_CONTAINER.innerHTML = `
-        <img class="quiz-question__image" src="./media/unknown.jpg" alt="bird">
+        <img class="quiz-question__image" src="./media/unknown.png" alt="bird">
         <div class="quiz-question__info">
             <h3 class="quiz-title">*****</h3>
 
