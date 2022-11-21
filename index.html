@@ -1,14 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Songbird</title>
+    <title>SongBird quiz @alexmegadrive</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <div class="container" id="slide1">
+        <div class="start-container">
+            <div class="logo"></div>
+
+            <div class="start-container__description">
+                <h3>Викторина "Угадай птицу по пению"</h3>
+                <div>Правила просты:</div>
+                <div>- В игре 6 раундов, в каждом раунде 6 вариантов ответов.</div>
+                <div>- За каждый неправильный ответ отнимается 1 балл, за правильный ответ дается 5 баллов.</div>
+                <div>- Максимальное количество баллов - 30.</div>
+                <div>- Для подготовки можете просмотреть <a href="./gallery.html" target="_blank">галерею птиц</a>
+                </div>
+
+            </div>
+            <button class="btn--start" data-controls="startGame">Начать игру</button>
+
+        </div>
+    </div>
+    <div class="container hidden">
+        <header class="header">
+            <div class="header__top-panel">
+                <div class="logo"></div>
+                <div class="score-container">Очки: <span id="score">0</span></div>
+            </div>
+            <ul class="progress__bar">
+                <li class="progress__item">Разминка</li>
+                <li class="progress__item">Воробьиные</li>
+                <li class="progress__item">Лесные птицы</li>
+                <li class="progress__item">Певчие птицы</li>
+                <li class="progress__item">Хищные птицы</li>
+                <li class="progress__item">Морские птицы</li>
+            </ul>
+        </header>
+
+        <section class="quiz-question">
+        </section>
+
+        <div class="quiz-controls">
+            <section class="options">
+                <ul class="options__list">
+                </ul>
+            </section>
+            <section class="card">
+            </section>
+            <button class="btn--level" data-controls="nextLevel">Следующий уровень</button>
+        </div>
+
+    </div>
+    <div class="container hidden" id="slide3">
+        <div class="start-container">
+            <div class="logo"></div>
+            <div class="start-container__description">
+                <h3>Результаты</h3>
+                <div id="results"></div>
+            </div>
+            <button class="btn--start" data-controls="newGame">Сыграть заново</button>
+        </div>
+
+
+        <script src="./scripts/birdsData.js"></script>
+        <script src="./scripts/HTMLservice.js"></script>
+        <script src="./scripts/gameService.js"></script>
+        <script src="./scripts/app.js"></script>
 </body>
+
 </html>
