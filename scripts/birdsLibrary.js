@@ -1,4 +1,4 @@
-const CONTAINER = document.querySelector('.library')
+const CONTAINER = document.querySelector('.gallery')
 
 renderLibraryItem(birdsData)
 
