@@ -82,14 +82,106 @@
     align-items: center;
   }
   
-  .logo {
-    background-image: url(./img/logo.png);
-    width: 200px;
-    height: 55px;
-    background-size: contain;
-    background-repeat: no-repeat;
+  .header__main_title {
+    font-size: 70px;
   }
-  
+  .header__main_title-span {
+    color: aquamarine;
+  }
+  .header__link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 70px;
+    font-weight: 900;
+    padding: 10px;
+    background-color: rgb(65, 64, 64);
+  }
+  .header__link:hover {
+    -webkit-animation: colorAnimateText 10s infinite linear;
+            animation: colorAnimateText 10s infinite linear;
+  }
+  @-webkit-keyframes colorAnimateText {
+    0% {
+      color: rgb(255, 255, 255);
+    }
+    5% {
+      color: rgb(208, 222, 33);
+    }
+    10% {
+      color: rgb(79, 220, 74);
+    }
+    20% {
+      color: rgb(63, 218, 216);
+    }
+    30% {
+      color: rgb(47, 201, 226);
+    }
+    40% {
+      color: rgb(28, 127, 238);
+    }
+    50% {
+      color: rgb(95, 21, 242);
+    }
+    60% {
+      color: rgb(186, 12, 248);
+    }
+    70% {
+      color: rgb(251, 7, 217);
+    }
+    80% {
+      color: rgb(255, 0, 0);
+    }
+    90% {
+      color: rgb(255, 154, 0);
+    }
+    95% {
+      color: rgb(208, 222, 33);
+    }
+    100% {
+      color: rgb(255, 255, 255);
+    }
+  }
+  @keyframes colorAnimateText {
+    0% {
+      color: rgb(255, 255, 255);
+    }
+    5% {
+      color: rgb(208, 222, 33);
+    }
+    10% {
+      color: rgb(79, 220, 74);
+    }
+    20% {
+      color: rgb(63, 218, 216);
+    }
+    30% {
+      color: rgb(47, 201, 226);
+    }
+    40% {
+      color: rgb(28, 127, 238);
+    }
+    50% {
+      color: rgb(95, 21, 242);
+    }
+    60% {
+      color: rgb(186, 12, 248);
+    }
+    70% {
+      color: rgb(251, 7, 217);
+    }
+    80% {
+      color: rgb(255, 0, 0);
+    }
+    90% {
+      color: rgb(255, 154, 0);
+    }
+    95% {
+      color: rgb(208, 222, 33);
+    }
+    100% {
+      color: rgb(255, 255, 255);
+    }
+  }
   .progress__bar {
     display: flex;
     list-style: none;
