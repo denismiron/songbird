@@ -361,6 +361,12 @@
     background-color: #008966;
   }
   
+  .index__footer_rs{
+    padding-top: 5%;
+    margin-left: 10%;
+    width: 20%;
+  }
+
   .playback-controls {
     display: flex;
     justify-content: space-between;
